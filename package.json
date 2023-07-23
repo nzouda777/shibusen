@@ -19,8 +19,9 @@
         "vue": "^3.2.31"
     },
     "dependencies": {
-        "vue-carousel": "^0.18.0",
         "vue-material-design-icons": "^5.2.0",
-        "vue-router": "^4.2.4"
+        "vue-material-icons": "^0.0.1",
+        "vue-router": "^4.2.4",
+        "vue3-carousel": "^0.3.1"
     }
 }

@@ -4,6 +4,7 @@ import {router} from '@inertiajs/vue3'
 import MenuItems from '../../Components/MenuItems.vue'
 import CategoryItem from '../../Components/CategoryItem.vue'
 import CompanyItem from '../../Components/CompanyItem.vue'
+import CustomCarousel from '../../Components/CustomCarousel.vue'
 const route = router
 watchEffect(() => {
     const isClicked = () => {
@@ -33,7 +34,7 @@ watchEffect(() => {
     </div>
 </section>
 <hr />
-<section class="space-y-12 py-8 relative">
+<section class="space-y-12 py-8 relative text-center">
     <div class="text-center mx-auto">
         <h2 class="font-bold text-3xl text-slate-800">
             Highlights
@@ -69,15 +70,47 @@ watchEffect(() => {
           >
         </div>
       </div>
+      <button class="inline-block rounded-full px-4 py-1 bg-green-500 font-semibold text-white">
+        voir plus
+      </button>
 </section>
 <hr />
-<section class="space-y-12 py-8">
-    <div class="px-2">
-        <h2 class="font-semibold text-2xl ">
-            top rated
-        </h2>
+<section class="space-y-12 md:py-8 my-3">
+    <div class="px-2 grid md:grid-cols-2">
         <div class="mt-2">
-            lorem
+            <CustomCarousel category="top rated"
+                :data="[
+                    {
+                        url: 'https://play-lh.googleusercontent.com/TPSgWAhKmB2y316oRMP0uf2WHF65EQJ00kltCjRoige85mj4neLx3vM5kAqLspotzoO8',
+                        name: 'Paysika',
+                        stars: '8M+'
+                    },
+                    {
+                        
+                        url: 'https://z-p3-scontent.fdla2-1.fna.fbcdn.net/v/t39.30808-6/319210238_1802382873457046_783525501397313980_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHBU-XQbglQ7-QUytj9F0UlJRv23P7a9uUlG_bc_tr25VhPO34TUtbqUpknrAIs-xMkue4z5z1Jn-QS_drP7yA-&_nc_ohc=jrxNy2-7VHwAX-1sh2y&_nc_zt=23&_nc_ht=z-p3-scontent.fdla2-1.fna&oh=00_AfCAuQIjASjtaiLSIyJtX_6GRGmzNofmpVfWzthzGQvrsQ&oe=64C243F6',
+                        name: 'notch pay',
+                        stars: '800k+'
+                    }
+                ]"
+            
+            />
+        </div>
+        <div class="mt-2">
+            <CustomCarousel category="most view"
+                :data="[
+                    {
+                        url: 'https://z-p3-scontent.fdla2-1.fna.fbcdn.net/v/t39.30808-6/333876333_1371835853569063_9157636213275182468_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEAtwlSwKmieLflZuApr7IQF3g14r0cSxoXeDXivRxLGt4XiR4BCHBHUehEx0mctAE5T4d4pjmx3lwlrV_pNW5b&_nc_ohc=aGsIHUnYoUMAX_8_uc3&_nc_zt=23&_nc_ht=z-p3-scontent.fdla2-1.fna&oh=00_AfDnAue7skABBAtk_a07YDU8oYbNtdHhb_kq98KXdwWx8w&oe=64C20D18',
+                        name: 'ejara',
+                        stars: '2M+'
+                    },
+                    {
+                        url: 'https://z-p3-scontent.fdla2-1.fna.fbcdn.net/v/t39.30808-6/345591935_1225528851413756_9062900275356394788_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF2x_b_rqI7IZIXwydbIj1pIEVZj2e1-yQgRVmPZ7X7JD_Oh6aNNOcUyG17qUpTSy0n0OxFpcLiQXAfN4lYHtbp&_nc_ohc=6ybFXX3RvUMAX8So1JT&_nc_zt=23&_nc_ht=z-p3-scontent.fdla2-1.fna&oh=00_AfBiqD6y3L-ws43R6rxGuynBi5sN4FrYc1qcy13esjhlSg&oe=64C2912A',
+                        name: 'faroty',
+                        stars: '1M+'
+                    }
+                ]"
+            
+            />
         </div>
     </div>
 </section>

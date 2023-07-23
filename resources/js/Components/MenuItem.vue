@@ -17,8 +17,8 @@ console.log(route)
     <div class="inline-block">
         <Link
          :to="pageUrl"
-         :class="pageUrl === route.page.url ? 'text-indigo-500' : 'text-black'"
-         class="hover:text-indigo-500"
+         :class="pageUrl === route.page.url ? 'text-green-500' : 'text-black'"
+         class="hover:text-green-500"
         >
             <div class="py-1 px-2 cursor-pointer font-semibold text-sm">
                 {{ name }}

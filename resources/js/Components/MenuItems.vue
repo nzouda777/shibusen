@@ -6,7 +6,7 @@
 
     <div class="company-logo">
         <h2 class="text-xl font-bold">
-            No<span class="text-indigo-500">name.</span>
+            No<span class="text-green-500">name.</span>
         </h2>
     </div>
     <div class="space-x-8">
